@@ -37,7 +37,11 @@ class Student
     end
   end
   
-  
+  def self.create(array)
+    student = self.new(name = hash[:name], grade = hash[:grade])
+    student.save
+    student
+  end
 
   
 
