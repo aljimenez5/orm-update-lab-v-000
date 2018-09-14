@@ -9,7 +9,17 @@ class Student
   def initialize(id = nil, name, grade)
     @name = name
     @grade = grade
-    @id = id
+    @id = id 
+  end
+  
+  def self.create_table
+    sql = <<-SQL
+      CREATE TABLE students (id PRIMARY KEY INTEGER,
+      name TEXT,
+      grade TEXT)
+    
+    
+  end
 
   
 
