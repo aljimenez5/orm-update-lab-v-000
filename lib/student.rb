@@ -54,5 +54,5 @@ class Student
   
   def update
     sql = <<-SQL
-      UPDATE students A
+      UPDATE students SET name = ?, grade = ? WHERE id = ?
 end
