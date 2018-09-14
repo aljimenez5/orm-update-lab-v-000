@@ -17,6 +17,7 @@ class Student
       CREATE TABLE students (id PRIMARY KEY INTEGER,
       name TEXT,
       grade TEXT);
+    SQL
     
     
   end
