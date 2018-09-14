@@ -49,5 +49,5 @@ class Student
   
   def self.find_by_name(name)
     student = DB[:conn].execute("SELECT * FROM students WHERE name = ?", name)
-
+    self.new_from_db(student)
 end
