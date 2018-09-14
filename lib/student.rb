@@ -51,4 +51,6 @@ class Student
     student = DB[:conn].execute("SELECT * FROM students WHERE name = ?", name)
     self.new_from_db(student)
   end
+  
+  def update
 end
